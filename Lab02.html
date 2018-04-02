@@ -3,51 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Share Your Travels</title>
+    <link rel="stylesheet" type="text/css" href="css/lab03css.css">
 </head>
+
 <body>
-    <article>
-        <h1><img src="images/logo.png">Share Your Travels</h1>
-    </article>
-    <nav>
-        <ul>
-            <li><a href="#">Description</a><br/></li>
-            <li><a href="#">Related Photos</a><br/></li>
-            <li><a href="#">Reviews</a><br/></li>
-        </ul>
-    </nav>
-    <article>
-        <h2>New York - Central Park</h2>
-    </article>
-    <section>
-        <h3>Description</h3>
-        <p>
-            Photo by Randy Connolly<br/><br/>
-            This photo of Conservatory Pond in <a href="#">Central Park</a> in <a href="#">New York City</a> was taken on October 22, 2016 with a Canon EOS 30D camera.<br/><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <img src="images/central-park.jpg"><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <em>Conservatory Pond in Central Park</em><br/><br/>
-            Options:&nbsp;<img src="images/icon_download.png">&nbsp;<img src="images/icon_mail.png">&nbsp;<img src="images/icon_map.png">&nbsp;<img src="images/icon_up.png">&nbsp;<img src="images/icon_down.png"><br/><br/>
-        </p>
-    </section>
-    <section>
-        <h3>Related Photos</h3>
-        <a href="images/related-large1.jpg"><img src="images/related-square1.jpg">&nbsp;</a>
-        <a href="images/related-large2.jpg"><img src="images/related-square2.jpg">&nbsp;</a>
-        <a href="images/related-large3.jpg"><img src="images/related-square3.jpg"></a><br/>
-    </section>
-    <section>
-        <h3>Reviews</h3>
-        <img src="images/icon_comment.png">&nbsp;<strong>Ricardo on 2016-05-23</strong><br/><br/>
-        Easy on the HDR buddy.<br/>
-        <hr/>
-        <img src="images/icon_comment.png">&nbsp;<strong>Susan on 2016-11-18</strong><br/><br/>
-        I love Central Park.<br/>
-        <hr/><br/>
-    </section>
-    <footer>
-        <a href="#">Home</a> | <a href="#">Browse</a> | <a href="#">Search</a><br/><br/>
-        <em>Copyright &copy; 2017 Share Your Travels</em><br/><br/>
+<div id="whole_page">
+
+    <div id="headline">
+        <div id="p1">Share Your Travels</div>
+        <div id="p2">Let us know where you've been</div>
+    </div>
+
+    <div id="tags">
+        <nav id="nav1">
+            <a href="#section1">Description</a>&nbsp;
+            <a href="#section2">Related Photos</a>&nbsp;
+            <a href="#section3">Reviews</a>
+        </nav>
+    </div>
+
+    <div id="main_body">
+        <section class="section" id="section1">
+            <article>
+                <h3 class="small_head">NEW YORK - CENTRAL PARK</h3>
+            </article>
+            <img src="images/central-park.jpg" height="100%" width="100%"><br/>
+            <div id="para1">Conservatory Pond in Central Park</div>
+            <div id="para2">This photo of Conservatory Pond in <a href="#">Central Park</a> in <a href="#">New York City</a> was taken on October 22, 2016 with a Canon EOS 30D camera.</div>
+            <div id="para3" align="right">
+                <img src="images/icon_download.png">&nbsp;<img src="images/icon_mail.png">&nbsp;<img src="images/icon_map.png">&nbsp;<img src="images/icon_up.png">&nbsp;<img src="images/icon_down.png"><br/>
+            </div>
+        </section>
+        <section class="section" id="section2">
+            <h3 class="small_head">RELATED PHOTOS</h3>
+            <div id="three_small_pictures">
+                <a href="images/related-large1.jpg"><img src="images/related-square1.jpg"></a>&nbsp;
+                <a href="images/related-large2.jpg"><img src="images/related-square2.jpg"></a>&nbsp;
+                <a href="images/related-large3.jpg"><img src="images/related-square3.jpg"></a><br/>
+            </div>
+        </section>
+        <section class="section" id="section3">
+            <h3 class="small_head">REVIEWS</h3>
+            <div id="reviews">
+                <p class="re_name" id="re_name1">Ricardo on <time>2016-05-23</time></p>
+                <p class="re_content">Easy on the HDR buddy.<hr></p>
+                <p class="re_name">Susan on <time>2016-11-18</time></p>
+                <p class="re_content">I love Central Park.<hr></p>
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer1">
+        <a href="#">Home</a> | <a href="#">Browse</a> | <a href="#">Search</a><br/>
     </footer>
+    <footer id="footer2">
+        <em>Copyright &copy; 2017 Share Your Travels</em>
+    </footer>
+</div>
+
 </body>
 </html>
