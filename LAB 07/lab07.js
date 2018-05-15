@@ -15,11 +15,16 @@ window.onload = function() {
     firstButton = document.getElementById("button1");
     secondSelect = document.getElementById("select2");
     secondDiv = document.getElementById("div2");
-}
+    firstButton.style.display = "none";
+};
 
 function chooseS1() {
+    firstButton.style.display = "block";
     firstDiv.innerHTML = "";
-
+    if(firstSelect.value=="SELECT ONE"){
+        firstButton.style.display = "none";
+        firstDiv.innerHTML = "";
+    }
     if(firstSelect.value=="CREATE TABLE"){
         secondDiv.innerHTML = "";
         firstButton.style.display = "none";
