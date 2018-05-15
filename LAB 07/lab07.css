@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    margin-top: 200px;
+}
+
+*{
+    margin: 10px;
+}
+
+input{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+select{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+}
+tr:nth-child(odd){
+    background-color: lightgrey;
+}
+button{
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 200px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+}
+
+th{
+    background-color: grey;
+    color: whitesmoke;
+}
