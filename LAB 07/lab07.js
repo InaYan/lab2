@@ -117,7 +117,7 @@ function clickB() {
         let index = secondSelect.selectedIndex - 1;
         let l = table[index].rows.length;
         table[index].insertRow(l);
-        for (let i = 0; i < attrInput.length; i++){
+        for (let i = 0; i < table[index].rows[0].cells.length; i++){
             let td = table[index].rows[l].insertCell(i);
             td.textContent = attrInput[i].value;
 
