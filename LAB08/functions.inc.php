@@ -9,29 +9,17 @@ function generateLink($url, $label, $class) {
 
 
 function outputPostRow($number)  {
-    $thumb1 = "8710320515.jpg";
     include("travel-data.inc.php");
-    echo "<div class=\"row\">
-                        <div class=\"col-md-4\">". generateLink(${thumb.$number},
-            "<img src='images/{${thumb.$number}}' alt='{${title.$number}}}' class='img-responsive'",
-            "")."</div>
-                        <div class=\"col-md-8\">
-                            <h2>{${title.$number}}</h2>
-                            <div class=\"details\">Posted by ".
-        generateLink("user.php?id={${userId.$number}}",
-            "{${userName.$number}}",
-            "")."</div>
-                            <span class=\"pull-right\">{${date.$number}}</span>
-                                <p class=\"ratings\">
-                                   ".constructRating(${reviewsRating.$number}). "{${reviewsNum.$number}} Reviews
-                                </p>
-                            </div>
-                            <p class=\"excerpt\">{${excerpt.$number}}<p>".
-                            generateLink("post.php?id={${postId.$number}}",
-                                "Read more",
-                                "btn btn-primary btn-sm") ."</p>
-                        </div>
-                    </div>";
+    $string1 = "<div class=\"row\"><div class=\"col-md-4\">";
+    $string2 = "</div><div class=\"col-md-8\"><h2>{${"title".$number}}</h2><div class=\"details\">Posted by ";
+    $string3 = "<span class=\"pull-right\">{${"date".$number}}</span><p class=\"ratings\">";
+    $string4 = "{${"reviewsNum".$number}} Reviews</p></div><p class=\"excerpt\">{${"excerpt".$number}}<p>";
+    $string5 = "</p></div></div><hr>";
+    echo $string1 . generateLink(${"thumb".$number},"<img src='images/{${"thumb".$number}}' alt='{${"title".$number}}' class='img-responsive'>", "") .
+        $string2 . generateLink("user.php?id={${"userId".$number}}","{${"userName".$number}}","") .
+        $string3 . constructRating(${"reviewsRating".$number}) .
+        $string4 . generateLink("post.php?id={${"postId".$number}}","Read more","btn btn-primary btn-sm") .
+        $string5;
 }
 
 /*
